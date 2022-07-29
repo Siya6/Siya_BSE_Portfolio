@@ -1,4 +1,4 @@
-﻿# Project Name/Title Goes Here
+﻿# Third Eye For the Visually Impaired
 I am working on a raspberry pi machine learning model
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
