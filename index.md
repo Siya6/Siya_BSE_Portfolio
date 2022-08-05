@@ -3,7 +3,7 @@ I am working on a device that can potentially help the visually impaired. This w
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Siya K. | Biotechnology High School | Computer Science, Biomedical Engineer | Junior 
+| Siya K. | Biotechnology High School | Computer Science, Biomedical Engineer |  Rising Junior 
 
 ![Relevant Name](https://cdn-shop.adafruit.com/970x728/4296-11.jpg)
   
