@@ -1,9 +1,9 @@
 ﻿# Third Eye For the Visually Impaired
-I am working on a raspberry pi machine learning model
+I am working on a device that can potentially help the visually impaired. This wearable innovation allows the blind to easily navigate by detecting nearby obstacles through an ultrasonic wave that then notifies the person with a buzzer sound and vibrator that both speed up as they get closer to the object. 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Siya Kottamasu | Biotechnology High School | Electrical Engineering | Junior 
+| Siya K. | Biotechnology High School | Computer Science, Biomedical Engineer | Junior 
 
 ![Relevant Name](https://cdn-shop.adafruit.com/970x728/4296-11.jpg)
   
@@ -21,6 +21,6 @@ My final milestone is the increased reliability and accuracy of my robot. I amel
 # First Milestone
   
 
-My first milestone was setting up and hooking up the Raspberry Pi and all the necessary components onto my tv. The heatsinks, the sd card, and the controller were all added to ensure that the Raspberry Pi was working. Instead of the Raspberry Pi Os software, I had to first download a different software called Retro Pie. With Retro Pie, I needed to download an Imager for Raspberry Pi. Raspberry Pi Imager automatically downloads a list of the latest versions of Raspbian supported by the Raspberry Pi. Raspbian is the typical Raspberry Pi Os software, the one I needed on the Raspberry Pi was Retro Pi. With the included SD card, I plugged in the SD into my computer and launched the Imager. The imager allowed me to set the Operating System to Retro Pi instead of Raspbian onto the SD card. With the OS imaged onto the SD, I plugged the SD card back into the Raspberry Pi and rebooted the system and Retro Bi booted up.
+My first milestone was setting up and hooking up the ultrasonic sensor and the arduino micro to the breadboard. I did this in order to test how if the sensor was working and understand how. Using wires from the sensor to the arduino board, I connected the VCC to the 5V, the trigger pin to 6, the echo pin to 7, and finally the ground pin to the ground on the arduino. Next, I wrote a code that would display the distance of an object in centimeters, on the serial monitor, from the ultrasonic sensor. The closer the object got to the sensor the the smaller the distance is, and the farther the object got the larger the distance appeared. This works because the sensor sends out sound waves the travels to the object and then bounces off it back to the sensor, which then recevies an echo. This pulse allows it to calculate the distance of the sensor from the object.
 
 [![Siya K First Milestone](https://res.cloudinary.com/marcomontalbano/image/upload/v1659706035/video_to_markdown/images/youtube--e5XEOtwXClo-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=e5XEOtwXClo "Siya K First Milestone"){:target="_blank" rel="noopener"}
