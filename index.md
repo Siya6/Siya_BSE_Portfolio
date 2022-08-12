@@ -5,7 +5,7 @@ I am working on a device that can potentially help the visually impaired. This w
 |:--:|:--:|:--:|:--:|
 | Siya K. | Biotechnology High School | Computer Science, Biomedical Engineer |  Rising Junior 
 
-![Relevant Name](40CD3913-DA62-4730-871C-0814D950829B.jpg)
+![Relevant Name](file:///Users/siyakottamasu/Downloads/40CD3913-DA62-4730-871C-0814D950829B.jpg)
   
 # Third Milestone
 My final milestone is putting everything together to make it a wearble device. I soldered everything as oriented on the breadboard to a perfboard and got it working. Then I attached the perfboard to a glove for people to put on. I attached it by handsewing the ultrasonic sensor to the front of the glove and hot gluing the perf board to the back of the glove. I also used a 9 volt battery as the power source, instead of connecting the arduino to my computer. This works because the arduino board has a memory library that stores the arduino sketch, so the circuit will still run correctly. This is the final result of this device, which is now ready for the visually impaired to use.
