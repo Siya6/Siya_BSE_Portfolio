@@ -47,14 +47,14 @@ My first milestone was setting up and hooking up the ultrasonic sensor and the a
     void loop()
     {
       long duration, cm;
-     duration = getDuration();
-     cm = microsecondsToCentimeters(duration);
+      duration = getDuration();
+      cm = microsecondsToCentimeters(duration);
 
-     output(cm, toggle);
+      output(cm, toggle);
 
-     buttonState = digitalRead(buttonPin);
+      buttonState = digitalRead(buttonPin);
 
-     Serial.println(buttonState);
+      Serial.println(buttonState);
 
 
       if(buttonState == 1) {
