@@ -25,3 +25,82 @@ For my second milestone I attached all the main compenents to the breadboard and
 My first milestone was setting up and hooking up the ultrasonic sensor and the arduino micro to the breadboard. I did this in order to test how if the sensor was working and understand how. Using wires from the sensor to the arduino board, I connected the VCC to the 5V, the trigger pin to 6, the echo pin to 7, and finally the ground pin to the ground on the arduino. Next, I wrote a code that would display the distance of an object in centimeters, on the serial monitor, from the ultrasonic sensor. The closer the object got to the sensor the the smaller the distance is, and the farther the object got the larger the distance appeared. This works because the sensor sends out sound waves the travels to the object and then bounces off it back to the sensor, which then recevies an echo. This pulse allows it to calculate the distance of the sensor from the object.
 
 [![Siya K First Milestone](https://res.cloudinary.com/marcomontalbano/image/upload/v1659706035/video_to_markdown/images/youtube--e5XEOtwXClo-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=e5XEOtwXClo "Siya K First Milestone"){:target="_blank" rel="noopener"}
+
+
+# Code
+    const int pingTrigPin = 6; //Trigger connected to PIN 7
+    const int pingEchoPin = 7; //Echo connected yo PIN 8
+    int buz = 9; //Buzzer to PIN 4
+    int motor = 11;
+    const int buttonPin = 2;     // the number of the pushbutton pin
+    int buttonState = 0;
+    boolean toggle;
+    int count;
+
+    void setup() {
+      Serial.begin(9600);
+      pinMode(buz, OUTPUT);
+      pinMode(motor, OUTPUT);
+      pinMode(buttonPin, INPUT);
+    }
+
+    void loop()
+    {
+      long duration, cm;
+     duration = getDuration();
+     cm = microsecondsToCentimeters(duration);
+
+     output(cm, toggle);
+
+     buttonState = digitalRead(buttonPin);
+
+     Serial.println(buttonState);
+
+
+      if(buttonState == 1) {
+       count++;
+      }
+     else if (count > 1) {
+       toggle = !toggle;
+       count = 0;
+      }
+     Serial.print("toggle = "); Serial.println(toggle);
+     Serial.print("count = "); Serial.println(count);
+  
+     //  delay(100);
+   
+    }
+   
+    void output(long dist, boolean mode) {
+      if (dist <= 50 && dist > 0)
+     {
+       int d = map(dist, 1, 100, 20, 2000);
+       if (mode) {digitalWrite(buz, HIGH);}
+       else {digitalWrite(motor, HIGH);}  // turn the LED on (HIGH is the voltage level)
+       delay(100);
+       if (mode) {digitalWrite(buz, LOW);}
+        else {digitalWrite(motor, LOW);}   // turn the LED off by making the voltage LOW
+        delay(d);
+      }
+     Serial.print(dist);
+      Serial.print("cm");
+      Serial.println();
+    }
+    
+    long getDuration() {
+       long d;
+       pinMode(pingTrigPin, OUTPUT);
+       digitalWrite(pingTrigPin, LOW);
+       delayMicroseconds(2);
+       digitalWrite(pingTrigPin, HIGH);
+       delayMicroseconds(5);
+       digitalWrite(pingTrigPin, LOW);
+       pinMode(pingEchoPin, INPUT);
+       d = pulseIn(pingEchoPin, HIGH);
+       return d;
+    }
+
+    long microsecondsToCentimeters(long microseconds)
+    {
+     return microseconds / 29 / 2;
+    }
