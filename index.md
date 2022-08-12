@@ -6,7 +6,7 @@ I built a device that can potentially help the visually impaired. This wearable 
 | Siya K. | Biotechnology High School | Computer Science, Biomedical Engineer |  Rising Junior 
 
 
-![Relevant Name](https://im.ezgif.com/tmp/ezgif-1-1801cb4164.jpg)
+![Relevant Name]([https://im.ezgif.com/tmp/ezgif-1-1801cb4164.jpg](https://github.com/Siya6/Siya_BSE_Portfolio/blob/gh-pages/40CD3913-DA62-4730-871C-0814D950829B.jpg?raw=true))
 
 
 # Third Milestone
