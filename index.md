@@ -26,8 +26,26 @@ My first milestone was setting up and hooking up the ultrasonic sensor and the a
 
 [![Siya K First Milestone](https://res.cloudinary.com/marcomontalbano/image/upload/v1659706035/video_to_markdown/images/youtube--e5XEOtwXClo-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=e5XEOtwXClo "Siya K First Milestone"){:target="_blank" rel="noopener"}
 
+# Materials
+    1 Arduino Micro
+    1 Ultrasonic Sensor
+    1 Buzzer
+    1 Button
+    1 Vibrating Motor
+    1 Perf Board
+    1 9V Battery
+    2 330 Ohm Resistors
+    11 Jumper Wires
+    1 Glove
+    
+    Additional:
+    1 Breadboard
+    1 Soldering Kit
+    1 Hot Glue gun
+    1 Safety Glasses
 
 # Code
+    // This is the code used for the final product
     const int pingTrigPin = 6; //Trigger connected to PIN 7
     const int pingEchoPin = 7; //Echo connected yo PIN 8
     int buz = 9; //Buzzer to PIN 4
