@@ -60,29 +60,29 @@ My first milestone was setting up and hooking up the ultrasonic sensor and the a
       if(buttonState == 1) {
        count++;
       }
-     else if (count > 1) {
+      else if (count > 1) {
        toggle = !toggle;
        count = 0;
       }
-     Serial.print("toggle = "); Serial.println(toggle);
-     Serial.print("count = "); Serial.println(count);
+      Serial.print("toggle = "); Serial.println(toggle);
+      Serial.print("count = "); Serial.println(count);
   
-     //  delay(100);
+    //  delay(100);
    
     }
    
     void output(long dist, boolean mode) {
       if (dist <= 50 && dist > 0)
-     {
+      {
        int d = map(dist, 1, 100, 20, 2000);
        if (mode) {digitalWrite(buz, HIGH);}
        else {digitalWrite(motor, HIGH);}  // turn the LED on (HIGH is the voltage level)
        delay(100);
        if (mode) {digitalWrite(buz, LOW);}
-        else {digitalWrite(motor, LOW);}   // turn the LED off by making the voltage LOW
-        delay(d);
+       else {digitalWrite(motor, LOW);}   // turn the LED off by making the voltage LOW
+       delay(d);
       }
-     Serial.print(dist);
+      Serial.print(dist);
       Serial.print("cm");
       Serial.println();
     }
