@@ -1,5 +1,5 @@
 ﻿# Third Eye For the Visually Impaired
-I am working on a device that can potentially help the visually impaired. This wearable innovation allows the blind to easily navigate by detecting nearby obstacles through an ultrasonic wave that then notifies the person with a buzzer sound and vibrator that both speed up as they get closer to the object. 
+I built a device that can potentially help the visually impaired. This wearable innovation allows the blind to easily navigate by detecting nearby obstacles through an ultrasonic wave that then notifies the person with a buzzer sound and vibrator that both speed up as they get closer to the object. 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
