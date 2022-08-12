@@ -1,9 +1,9 @@
 ﻿# Third Eye For the Visually Impaired
-I built a device that can potentially help the visually impaired. This wearable innovation allows the blind to easily navigate by detecting nearby obstacles through an ultrasonic wave that then notifies the person with a buzzer sound and vibrator that both speed up as they get closer to the object. 
+I built a device that can potentially help the visually impaired. This wearable innovation allows the blind to easily navigate by detecting nearby obstacles through an ultrasonic wave that then notifies the person with a buzzer sound and a vibrating motor that both speed up as they get closer to the object. 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Siya K. | Biotechnology High School | Computer Science, Biomedical Engineer |  Rising Junior 
+| Siya K. | Biotechnology High School | Computer Science, Biomedical Engineer | Rising Junior 
 
 
 ![Relevant Name](https://github.com/Siya6/Siya_BSE_Portfolio/blob/gh-pages/40CD3913-DA62-4730-871C-0814D950829B.jpg?raw=true)
@@ -16,7 +16,7 @@ My final milestone is putting everything together to make it a wearble device. I
 
 
 # Second Milestone
-For my second milestone I attached all the main compenents to the breadboard and wrote a new code that combined each component's code, and then refining that new code to get all the parts to work together. When running the sketch, the serial monitor shows the distance in centimeters, the toggle, and the count. For the distance shown, it changes relative to the sensor's distance to an object. Additionally, the count remains as 0, until I press on the button. The count value increases as long as I press and hold on the button, and when I release the button after pressing on it, the count will go back to 0 and the toggle count switches. Initially the toggle value will equal 0, meaning the ultrasonic sensor is working with the motor. So as the sensor gets closer to an object the motor will vibrate faster and it'll go slower as the sensor moves father away from an object. After I click on the button the toggle will switch to 1, which means the sensor switches to connect to the buzzer. The buzzer also works realtive to the sensor, so as the ultrasonic sensor gets closer to an object, the buzzer will beep faster and vice versa. I wrote a code for the circuit to work as per the customer's preference of whether they would prefer a vibrating motor or a buzzer while using the device.
+For my second milestone I attached all the main compenents to the breadboard and wrote a new code that combined each component's code, and then further refined the new code to get all the parts to work together. When running the sketch, the serial monitor shows a distance in centimeters, the toggle, and the count. For the distance shown, it changes relative to the sensor's distance to an object. Additionally, the count remains as 0, until I press on the button. The count value increases as long as I press and hold on the button, and when I release the button after pressing on it, the count will go back to 0 and the toggle count switches. Initially the toggle value will equal 0, meaning the ultrasonic sensor is working with the motor. So as the sensor gets closer to an object the motor will vibrate faster and then slower as the sensor moves farther away from an object. After I click on the button the toggle will switch to 1, which means the sensor is now connected to the buzzer instead of the motor. The buzzer also works realtive to the sensor, so as the ultrasonic sensor gets closer to an object, the buzzer will beep faster and vice versa. I wrote a code for the circuit to work as per the customer's preference of whether they would prefer a vibrating motor or a buzzer while using the device.
 
 [![Siya's Second Milestone](https://res.cloudinary.com/marcomontalbano/image/upload/v1660254914/video_to_markdown/images/youtube--XCoP4QesjLY-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=XCoP4QesjLY "Siya's Second Milestone"){:target="_blank" rel="noopener"}
 
